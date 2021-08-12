@@ -1,13 +1,18 @@
 import React from 'react';
-import './App.css';
-import Menu from "./components/Menu/Menu";
+import classes from  './App.module.css';
+import TopMenu from "./components/Menu/TopMenu/TopMenu";
+import SideMenu from "./components/Menu/SideMenu/SideMenu";
 
 function App() {
-  return (
-    <div className="App">
-      <Menu/>
-    </div>
-  );
+    return (
+        <div className={classes.App}>
+            <TopMenu/>
+            <SideMenu/>
+            <div className={classes.mainContent}>
+
+            </div>
+        </div>
+    );
 }
 
 export default App;
