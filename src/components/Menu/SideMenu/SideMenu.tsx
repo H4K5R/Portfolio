@@ -4,6 +4,7 @@ import classes from "./SideMenu.module.css";
 import {useDispatch, useSelector} from "react-redux";
 import {uiActions} from "../../../store/UI-slice";
 import {RootState} from "../../../store";
+import {contactLink, skillsLink, workLink } from "../../../LinkPaths";
 
 const SideMenu: React.FC<{}> = () => {
     const dispatch = useDispatch();
@@ -18,11 +19,11 @@ const SideMenu: React.FC<{}> = () => {
                 <p className={classes.menuText}>Menu</p>
                 <ul className={classes.menu}>
                     <li><NavLink className={classes.menuItem} activeClassName={classes.activeItem}
-                                 to={'/work'}>Work</NavLink></li>
+                                 to={workLink}>Work</NavLink></li>
                     <li><NavLink className={classes.menuItem} activeClassName={classes.activeItem}
-                                 to={'/skills'}>Skills</NavLink></li>
+                                 to={skillsLink}>Skills</NavLink></li>
                     <li><NavLink className={classes.menuItem} activeClassName={classes.activeItem}
-                                 to={'/contact'}>Contact</NavLink></li>
+                                 to={contactLink}>Contact</NavLink></li>
                 </ul>
                 <button className={classes.cv}>Download CV</button>
             </div>
