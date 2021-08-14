@@ -6,6 +6,7 @@ import {RootState} from "../../../store";
 import {uiActions} from "../../../store/UI-slice";
 import {contactLink, skillsLink, workLink } from "../../../LinkPaths";
 
+
 const TopMenu: React.FC<{}> = function () {
     const dispatch = useDispatch();
     const isSideMenuOpen = useSelector((state: RootState) => state.uiReducer.isSideMenuOpen)
@@ -31,7 +32,7 @@ const TopMenu: React.FC<{}> = function () {
                     <li><NavLink className={classes.menuItem} activeClassName={classes.activeItem}
                                  to={skillsLink}>Skills</NavLink></li>
                     <li><NavLink className={classes.menuItem} activeClassName={classes.activeItem}
-                                 to={contactLink}>Contact</NavLink></li>
+                                 to={contactLink} >Contact</NavLink></li>
                 </ul>
                 <button className={classes.cv}>Download CV</button>
             </nav>

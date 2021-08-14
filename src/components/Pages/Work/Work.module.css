@@ -1,3 +1,35 @@
 .polygonContainer {
     overflow: hidden;
 }
+.workContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 5vw;
+}
+.projectContainer {
+    flex-grow: 1;
+    overflow-y: scroll;
+
+}
+.workText {
+    display: inline;
+    flex-shrink: 1;
+    font-size: 2.75rem;
+    text-align: left;
+    height: fit-content;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+@media (min-width: 512px) and (max-width: 768px) {
+    .workContainer {
+        margin: 30px 30px 0 30px;
+    }
+
+}
+@media (max-width: 512px) {
+    .workText {
+        font-size: 2.75rem;
+    }
+}

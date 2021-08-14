@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {uiStateType} from "../projectTypes";
+import {uiStateType} from "../Types";
 const initialState:uiStateType = {
     isSideMenuOpen:false
 }

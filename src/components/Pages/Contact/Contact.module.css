@@ -1,0 +1,74 @@
+.contactContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 5vw;
+    text-align: left;
+
+}
+.contactText {
+    display: inline;
+    flex-shrink: 1;
+    font-size: 2.75rem;
+    height: fit-content;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+}
+.contentHeading {
+    font-size: 2rem;
+}
+.content {
+    margin-top: 10px;
+    margin-bottom: 2.5%;
+    font-size: 1.25rem;
+}
+.linksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+.link {
+    margin: 5px;
+}
+.linkImage {
+    width: 5vw;
+}
+.wavesContainer {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+}
+.copyRightText {
+    position: absolute;
+    color: black;
+    right: 10px;
+    bottom: 10px;
+
+}
+.waves{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: -100;
+}
+@media (min-width: 220px) and (max-width: 768px) {
+    .contactText {
+        font-size: 2.5rem;
+    }
+    .contentHeading {
+        font-size: 1.5rem;
+    }
+    .content {
+        font-size: 1rem;
+    }
+    .linkImage {
+        width: unset;
+        height: 5vh;
+    }
+}

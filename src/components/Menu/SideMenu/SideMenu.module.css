@@ -29,6 +29,7 @@
     font-size: 20px;
     font-family: "Balsamiq Sans",serif;
     font-weight: bold;
+    margin-top: 30px;
 
 }
 .menu {
@@ -42,13 +43,22 @@
     padding: 0;
     margin: 5vh 0;
 }
-.activeItem {
-    font-weight: 700;
-}
+
 .menuItem {
     text-decoration: none;
     color: white;
     cursor: pointer;
+    transition: font-size,font-weight,color 250ms;
+}
+.menuItem:hover {
+    color: #0095ff;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.activeItem {
+    color: #fbbd61;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 .cv {
     padding: 3px 6px;
