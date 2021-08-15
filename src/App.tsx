@@ -21,7 +21,6 @@ function App() {
                     <Route path={skillsLink}><Skills/></Route>
                     <Route path={contactLink}><Contact/></Route>
                 </Switch>
-
             </div>
         </div>
     );

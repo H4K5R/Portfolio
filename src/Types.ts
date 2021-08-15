@@ -6,8 +6,8 @@ export type projectDataType = {
     name:string,
     description:string,
     technology:string[],
-    buttonText:string,
-    link:string
+    buttonText?:string,
+    link?:string
 }
 export type skillSectionType = {
     title:string,

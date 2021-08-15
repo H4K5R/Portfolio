@@ -63,6 +63,9 @@
     background-color: white;
     margin: 6px 0;
 }
+.aClass {
+    display: none;
+}
 @media (min-width: 220px) and (max-width: 768px) {
     .navBar {
         width: 100vw;

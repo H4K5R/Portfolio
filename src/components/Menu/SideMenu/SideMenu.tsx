@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {uiActions} from "../../../store/UI-slice";
 import {RootState} from "../../../store";
 import {contactLink, skillsLink, workLink } from "../../../LinkPaths";
+import cv from "../../../Documents/dev00-cv.pdf";
 
 const SideMenu: React.FC<{}> = () => {
     const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const SideMenu: React.FC<{}> = () => {
                     <li><NavLink className={classes.menuItem} activeClassName={classes.activeItem}
                                  to={contactLink}>Contact</NavLink></li>
                 </ul>
-                <button className={classes.cv}>Download CV</button>
+                <a href={cv} target={'_blank'} rel={'noreferrer'}><button className={classes.cv}>Download CV</button></a>
             </div>
 
         </div>

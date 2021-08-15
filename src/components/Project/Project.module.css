@@ -28,13 +28,23 @@
 .button {
     all: unset;
     text-align: center;
-    background: #c4c4c4;
+    background: #4997ff;
     color: black;
     margin: 10px 0;
     padding: 10px 0;
     border: none;
     border-radius: 10px;
+    transition: background,box-shadow 250ms;
 }
+.button:hover {
+    background: white;
+    box-shadow: 0 0 10px 2.5px white;
+}
+.button:active {
+    background: #6cff86;
+    box-shadow: 0 0 10px 2.5px #214c28;
+}
+
 @media (min-width: 768px) {
     .projectContainer {
         margin-left:  1.5%;

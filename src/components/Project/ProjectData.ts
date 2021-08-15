@@ -34,7 +34,7 @@ export const projects:projectDataType[] = [
     {
         image:ticketingWeb,
         name:'Ticketing System Web',
-        description:'An FullStack Web Application to book tickets for the public buses',
+        description:'A FullStack Web Application to book tickets for the public buses',
         technology:[
             'HTML',
             'CSS',

@@ -16,7 +16,10 @@ const Project: React.FC<{
                     return <p className={classes.techText} key={index}>{tech}</p>
                 })}
             </div>
-            <a className={classes.button} href={props.data.link} target="_blank" rel={'noreferrer'}>{props.data.buttonText}</a>
+            {
+                props.data.link? <a className={classes.button} href={props.data.link} target="_blank" rel={'noreferrer'}>{props.data.buttonText}</a> : ''
+            }
+
         </div>
     )
 }

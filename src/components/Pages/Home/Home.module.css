@@ -45,10 +45,11 @@
     border: white solid 2px;
     padding: 10px 20px;
     border-radius: 1000px;
+    transition: box-shadow 250ms;
 }
 .contactButton:hover {
-    color: darkgrey;
     cursor: pointer;
+    box-shadow: 0 0 10px 10px #4997ff;
 }
 .background {
     position: absolute;
@@ -70,12 +71,11 @@
     left:-12.5vw;
     width: 125vw;
     bottom: 37.5vh;
-    opacity: 50%;
+
 }
 .gear {
     width: 25vw;
     position: relative;
-
 }
 .leftGear {
     animation: rotation infinite 20s linear;
@@ -124,12 +124,10 @@
         font-size: 1rem;
     }
     .gearContainer {
-
-    }
-    .gearContainer {
         left:-25vw;
         width: 150vw;
         bottom: 37.5vh;
+        opacity: 50%;
     }
     .gear {
         width: 50vw;
