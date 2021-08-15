@@ -1,4 +1,4 @@
-export const homeLink = '/portfolio';
-export const workLink = '/portfolio/work';
-export const skillsLink = '/portfolio/skills';
-export const contactLink = '/portfolio/contact';
+export const homeLink = '/';
+export const workLink = '/work';
+export const skillsLink = '/skills';
+export const contactLink = '/contact';
