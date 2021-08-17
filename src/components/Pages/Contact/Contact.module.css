@@ -5,7 +5,7 @@
     height: 100%;
     margin: 0 5vw;
     text-align: left;
-
+    overflow-y:scroll ;
 }
 .contactText {
     display: inline;
