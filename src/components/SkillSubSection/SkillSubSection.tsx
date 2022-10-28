@@ -1,17 +1,17 @@
 import React from "react";
-import {skillSectionType} from "../../Types";
+import {skillSubSectionType} from "../../Types";
 import classes from './SkillSection.module.css'
 
-const SkillSection:React.FC<{data:skillSectionType}> =  (props) => {
-    return(
+const SkillSubSection: React.FC<{ data: skillSubSectionType }> = (props) => {
+    return (
         <div className={classes.sectionContainer}>
             <p className={classes.sectionTitle}>{props.data.title}</p>
             <div className={classes.skillsContainer}>
-                {props.data.skills.map((skill,index) => {
+                {props.data.skills.map((skill, index) => {
                     return <p className={classes.skill} key={index}>{skill}</p>
                 })}
             </div>
         </div>
     )
 }
-export default SkillSection;
+export default SkillSubSection;

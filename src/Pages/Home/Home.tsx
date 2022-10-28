@@ -1,10 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {contactLink} from "../../../LinkPaths";
+import {contactLink} from "../../LinkPaths";
 import classes from "./Home.module.css";
-import Background from '../../../Images/Background.png';
-import Gear1 from '../../../Images/Gear 1.svg';
-import Gear2 from '../../../Images/Gear 2.svg';
+import Background from '../../Images/Background.png';
+import Gear1 from '../../Images/Gear 1.svg';
+import Gear2 from '../../Images/Gear 2.svg';
 
 const Home: React.FC<{}> = () => {
     return (

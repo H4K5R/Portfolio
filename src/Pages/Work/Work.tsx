@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import {useDispatch} from "react-redux";
-import {uiActions} from "../../../store/UI-slice";
+import {uiActions} from "../../store/UI-slice";
 import classes from "./Work.module.css";
-import Polygons from "../../UI/Polygons/Polygons";
-import Project from "../../Project/Project";
-import {projects} from "../../Project/ProjectData";
+import Polygons from "../../components/UI/Polygons/Polygons";
+import Project from "../../components/Project/Project";
+import {projects} from "../../Data/ProjectData";
 
 const Work: React.FC<{}> = () => {
     const dispatch = useDispatch();

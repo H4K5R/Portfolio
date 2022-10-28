@@ -4,10 +4,10 @@ import TopMenu from "./components/Menu/TopMenu/TopMenu";
 import SideMenu from "./components/Menu/SideMenu/SideMenu";
 import {Route, Switch} from "react-router";
 import {contactLink, homeLink, skillsLink, workLink} from './LinkPaths';
-import Home from "./components/Pages/Home/Home";
-const Work = React.lazy(() => import("./components/Pages/Work/Work"));
-const Skills = React.lazy(() => import( "./components/Pages/Skills/Skills"));
-const Contact = React.lazy(() => import("./components/Pages/Contact/Contact"));
+import Home from "./Pages/Home/Home";
+const Work = React.lazy(() => import("./Pages/Work/Work"));
+const Skills = React.lazy(() => import( "./Pages/Skills/Skills"));
+const Contact = React.lazy(() => import("./Pages/Contact/Contact"));
 
 function App() {
 

@@ -1,7 +1,7 @@
-import {projectDataType} from "../../Types";
-import moneyTracker from "../../Images/MoneyTracker.jpg"
-import ticketingMobile from "../../Images/TicketingMobile.jpg";
-import ticketingWeb from "../../Images/TicketingWeb.jpg";
+import {projectDataType} from "../Types";
+import moneyTracker from "../Images/MoneyTracker.jpg"
+import ticketingMobile from "../Images/TicketingMobile.jpg";
+import ticketingWeb from "../Images/TicketingWeb.jpg";
 
 export const projects:projectDataType[] = [
     {

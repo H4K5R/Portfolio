@@ -1,12 +1,14 @@
-import {skillSectionType} from "../../../Types";
+import {skillSubSectionType} from "../Types";
 
-export const skills:skillSectionType[] = [
+export const skills:skillSubSectionType[] = [
     {
         title:'Languages',
         skills: [
             'Javascript',
             'Typescript',
-            'Java'
+            'Java',
+            'Kotlin',
+            'Golang'
         ]
     },
     {
@@ -15,28 +17,36 @@ export const skills:skillSectionType[] = [
             'HTML',
             'CSS',
             'Bootstrap',
-            'React'
+            'ASP.Net',
+            'React.js',
+            'Next.js'
         ]
     },
     {
         title:'Back-End',
         skills:[
             'NodeJS',
-            'Firebase'
+            'Firebase',
+            'Express.js',
+            'Java EE',
+            'Spring Boot'
         ]
     },
     {
         title:'Mobile',
         skills:[
             'Android SDK',
-            'Android Studio'
+            'Android Studio',
+            'Jetpack Compose'
         ]
     },
     {
         title:'Database',
         skills:[
             'MongoDB',
-            'Firestore'
+            'Firestore',
+            'SQL',
+            'Redis'
         ]
     },
     {

@@ -1,12 +1,12 @@
 import React, {useEffect} from "react";
 import {useDispatch} from "react-redux";
-import {uiActions} from "../../../store/UI-slice";
+import {uiActions} from "../../store/UI-slice";
 import classes from "./Contact.module.css";
-import mail from "../../../Images/Mail.svg";
-import linkedIn from "../../../Images/LinkedIn.svg";
-import github from "../../../Images/Github.svg";
-import insta from "../../../Images/Insta.svg";
-import waves from "../../../Images/Waves.png";
+import mail from "../../Images/Mail.svg";
+import linkedIn from "../../Images/LinkedIn.svg";
+import github from "../../Images/Github.svg";
+import insta from "../../Images/Insta.svg";
+import waves from "../../Images/Waves.png";
 
 const Contact: React.FC<{}> = () => {
     const dispatch = useDispatch();

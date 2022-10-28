@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import {useDispatch} from "react-redux";
-import {uiActions} from "../../../store/UI-slice";
+import {uiActions} from "../../store/UI-slice";
 import classes from './Skills.module.css';
-import Background from "../../../Images/Background.png";
-import {skills} from "./SkillsData";
-import SkillSection from "../../SkillSection/SkillSection";
+import Background from "../../Images/Background.png";
+import {skills} from "../../Data/SkillsData";
+import SkillSubSection from "../../components/SkillSubSection/SkillSubSection";
 
 
 const Skills: React.FC<{}> = () => {
@@ -24,7 +24,7 @@ const Skills: React.FC<{}> = () => {
             </div>
             <div className={classes.skillsSubContainer}>
                 {skills.map((section,index) => {
-                    return <SkillSection data={section} key={index}/>
+                    return <SkillSubSection data={section} key={index}/>
                 })}
             </div>
         </div>

@@ -9,7 +9,7 @@ export type projectDataType = {
     buttonText?:string,
     link?:string
 }
-export type skillSectionType = {
+export type skillSubSectionType = {
     title:string,
     skills:string[]
 }
