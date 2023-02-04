@@ -3,14 +3,18 @@ import classes from './Polygon.module.css'
 
 const Polygon:React.FC<{src:string}> = (props) => {
 
+    const html = document.documentElement;
     const [x,setX] = useState<number>(1);
     const [y,setY] = useState<number>(2);
+    const [width,setWidth] = useState<number>(html.clientWidth);
+    const [height,setHeight] = useState<number>(html.clientHeight);
     const [rotation,setRotation] = useState<number>(120);
+    window.addEventListener("resize", ev => {
+        setWidth(html.clientWidth);
+        setHeight(html.clientHeight);
+    })
 
     const randomMovement = useCallback(() => {
-        const html = document.documentElement;
-        const height = html.clientHeight;
-        const width = html.clientWidth;
         const polyHeight = width/10;
         const polyHypotenuse = Math.sqrt(((polyHeight * polyHeight) + (polyHeight * polyHeight)));
         let x = Math.ceil(width * Math.random());
@@ -25,7 +29,7 @@ const Polygon:React.FC<{src:string}> = (props) => {
         setX(x);
         setY(y);
         setRotation(rotation);
-    },[])
+    },[height,width])
     useEffect(() => {
         randomMovement();
         const x = setInterval(() => {
