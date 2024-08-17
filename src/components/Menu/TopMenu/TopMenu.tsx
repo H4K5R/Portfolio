@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../../store";
 import {uiActions} from "../../../store/UI-slice";
 import {contactLink, homeLink, skillsLink, workLink} from "../../../LinkPaths";
-import cv from "../../../Documents/dev00-cv.pdf"
+import cv from "../../../Documents/Hariharan_K_Sriram.pdf"
 
 
 const TopMenu: React.FC<{}> = function () {
@@ -26,7 +26,7 @@ const TopMenu: React.FC<{}> = function () {
                     <div className={classes.burgerLine}/>
                     <div className={classes.burgerLine}/>
                 </div>
-                <Link to={homeLink} className={classes.brand}>Dev00</Link>
+                <Link to={homeLink} className={classes.brand}>Hari</Link>
                 <ul className={`${classes.menu} ${classes.desktopMenu}`}>
                     <li><NavLink className={classes.menuItem} activeClassName={classes.activeItem}
                                  to={workLink}>Work</NavLink></li>

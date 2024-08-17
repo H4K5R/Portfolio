@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {uiActions} from "../../../store/UI-slice";
 import {RootState} from "../../../store";
 import {contactLink, skillsLink, workLink } from "../../../LinkPaths";
-import cv from "../../../Documents/dev00-cv.pdf";
+import cv from "../../../Documents/Hariharan_K_Sriram.pdf";
 
 const SideMenu: React.FC<{}> = () => {
     const dispatch = useDispatch();

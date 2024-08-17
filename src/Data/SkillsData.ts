@@ -8,7 +8,8 @@ export const skills:skillSubSectionType[] = [
             'Typescript',
             'Java',
             'Kotlin',
-            'Golang'
+            'Golang',
+            'Python'
         ]
     },
     {
@@ -17,7 +18,6 @@ export const skills:skillSubSectionType[] = [
             'HTML',
             'CSS',
             'Bootstrap',
-            'ASP.Net',
             'React.js',
             'Next.js'
         ]

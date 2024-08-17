@@ -12,6 +12,8 @@ const Polygon:React.FC<{src:string}> = (props) => {
     window.addEventListener("resize", ev => {
         setWidth(html.clientWidth);
         setHeight(html.clientHeight);
+        setX(x);
+        setY(y);
     })
 
     const randomMovement = useCallback(() => {

@@ -1,4 +1,4 @@
-# This repo contains the code for my portfolio deployed over [here](https://dev00.io)
+# This repo contains the code for my portfolio deployed over [here](https://hari.engineer)
 
 To run this project
 

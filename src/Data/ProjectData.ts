@@ -15,20 +15,6 @@ export const projects:projectDataType[] = [
             'Social Authentication'
         ],
         buttonText:'Download Link',
-        link:'https://play.google.com/store/apps/details?id=io.dev00.moneytracker'
-    },
-    {
-        image:ticketingMobile,
-        name:'Ticketing System Mobile App',
-        description:'An Android Application to book tickets for the public buses',
-        technology:[
-            'Java',
-            'Android',
-            'Firebase',
-            'Google Maps API',
-            'Social Authentication'
-        ],
-        buttonText:'Code Link',
         link:''
     },
     {
@@ -48,5 +34,19 @@ export const projects:projectDataType[] = [
         ],
         buttonText:'Code Link',
         link:'https://github.com/h4k5r/Ticketing-Web-FrontEnd'
+    },
+    {
+        image:ticketingMobile,
+        name:'Ticketing System Mobile App',
+        description:'An Android Application to book tickets for the public buses',
+        technology:[
+            'Java',
+            'Android',
+            'Firebase',
+            'Google Maps API',
+            'Social Authentication'
+        ],
+        buttonText:'Code Link',
+        link:''
     },
 ]
